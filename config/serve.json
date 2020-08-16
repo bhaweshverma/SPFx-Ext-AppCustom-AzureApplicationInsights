@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://gtlawhub.sharepoint.com/sites/developersite/SitePages/First-Modern-Page.aspx",
+      "customActions": {
+        "c5bf9551-8be5-480e-a3c0-3fc99db42213": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "aikey": "76ee1177-fabd-4620-80b6-2bc3da2c9897"
+          }
+        }
+      }
+    },
+    "applicationInsights": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "c5bf9551-8be5-480e-a3c0-3fc99db42213": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
